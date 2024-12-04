@@ -80,6 +80,6 @@ window.onload = function () {
 };
 
 function regresar(){
-window.open('juegos.html')
+window.history.back('juegos.html')
     
 }

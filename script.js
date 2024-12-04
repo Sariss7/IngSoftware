@@ -78,3 +78,8 @@ window.onload = function () {
     inicializarPreguntas();
     seleccionarPreguntasAleatorias();
 };
+
+function regresar(){
+window.open('juegos.html')
+    
+}

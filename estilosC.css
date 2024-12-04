@@ -1,0 +1,177 @@
+.sopadeletras {
+    padding-left: 470px;
+    padding-top: 45px;  
+
+}
+
+.sopadeletras iframe {
+    
+    position: absolute;
+    background-color: white;
+}
+
+.menu {
+    background-color: #003366;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu .logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu .logo-img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.menu h1 {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 500;
+}
+
+.menu ul li a i {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.menu ul li a:hover {
+    background-color: #002244;
+    color: #e0e0e0;
+    border-radius: 4px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    border-radius: 4px;
+    z-index: 1000;
+    background-color: #004080;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.menu ul li:hover > .submenu {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+
+.submenu li {
+    position: relative;
+    display: block;
+}
+
+.submenu li a {
+    white-space: nowrap;
+    margin: 0;
+    display: block;
+}
+
+.submenu li a:hover {
+    background-color: #002244;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu .logo {
+        margin-bottom: 10px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu ul li {
+        width: 100%;
+    }
+
+    .menu ul li a {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .content section {
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .content h2 {
+        font-size: 1.5em;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    img.Lenguajes {
+        max-width: 100%;
+        height: auto;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .content {
+        padding: 30px;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
